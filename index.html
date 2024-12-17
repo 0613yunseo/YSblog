@@ -18,6 +18,22 @@
 
 
     <style>
+      /* 기본 설정: 모바일 및 태블릿용 */
+      img.responsive {
+          width: 100%; /* 기본적으로 너비를 부모 요소에 맞춤 */
+          height: auto; /* 비율을 유지 */
+      }
+
+      /* 데스크탑용 (화면 너비가 992px 이상일 경우) */
+      @media (min-width: 992px) {
+          img.responsive {
+              max-width: 50%; /* 데스크탑에서는 최대 크기를 제한 */
+              height: auto;
+              margin: 0 auto; /* 중앙 정렬을 위해 */
+              display: block;
+          }
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -239,7 +255,7 @@
         <div class="col">
           <div class="card shadow-sm">
             <!--이미지-->
-            <img src="여행 (1).jpg" class="card-img-top" class="card-img-top" alt="1일차 비행기" width="100%" height="225">
+            <img src="여행 (8).jpg" class="card-img-top" alt="1일차 글리코상상" style="width: 100%; height: 225px; object-fit: cover;">
 
 
             <div class="card-body">
@@ -248,35 +264,35 @@
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='#content-1'">View</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">3 mins</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="여행 (24).jpg" class="card-img-top" alt="2일차 니넨자카/산넨자카카" style="width: 100%; height: 225px; object-fit: cover;">
             <div class="card-body">
               <p class="card-text">2일차 - 교토</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='#content-2'">View</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">2 mins</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="여행 (32).jpg" class="card-img-top" alt="3일차 쓰텐카쿠쿠" style="width: 100%; height: 225px; object-fit: cover;">
             <div class="card-body">
               <p class="card-text">3일차- 덴노지</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='#content-3'">View</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">4 mins</small>
               </div>
             </div>
           </div>
@@ -284,14 +300,14 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="여행 (36).jpg" class="card-img-top" alt="4일차 이치란라멘" style="width: 100%; height: 225px; object-fit: cover;">
             <div class="card-body">
               <p class="card-text">4일차 - 출국 및 총정리</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='#content-4'">View</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">1 mins</small>
               </div>
             </div>
           </div>
@@ -311,36 +327,106 @@
       나 포함 세명의 친구들과 일본 <b>'오사카'</b> 여행을 가기로 했다. <br>
       일정은 2024/02/04-2024/02/07으로 3박 4일이다.<br>
       먼저 공항에 일찍 도착해 출국 수속을 받고 비행기 안에서 찍은 사진이다<br><br>
-      <img src="여행 (1).jpg" class="card-img-top" alt="1일차 비행기" style="max-width: 70%; height: auto;">
-      <br><br>오사카에 도착해 도톤보리 근처로 잡은 숙소로 가기전 찍은 글리코상이다.<br>
-      <img src="여행 (2).jpg" class="card-img-top" alt="1일차 글리코상" style="max-width: 70%; height: auto;">
-      <br>점심으로 미리 봐둔 식당을 가려했지만 찾지 못했다..<br>
-      그래서 식당을 찾아다니다가 들어간 곳!<br>
-      완전 로컬식당인 것 같았다.. 일본인 아저씨들 뿐 !대박!<br>
-      <img src="여행 (3).jpg" class="card-img-top" alt="1일차 스시" style="max-width: 70%; height: auto;">
-      <br>
-      다 먹고 난바로 이동했다<br>
-      <img src="https://drive.google.com/file/d/1Hdbd7aNwQe5w5fnrY5XDlEs4Q33HcGBI/view?usp=sharing" class="card-img-top" alt="2일차 교토녹차" style="max-width: 70%; height: auto;"> 
-      
+      <img src="여행 (1).jpg" class="card-img-top responsive" alt="1일차 비행기">
+      <br><br>오사카에 도착해 도톤보리 근처로 잡은 숙소로 가기전 찍은 글리코상이다.<br><br>
+      <img src="여행 (2).jpg" class="card-img-top responsive" alt="1일차 글리코상">
+      <br><br>점심으로 미리 봐둔 식당을 가려했지만 찾지 못했다..<br>
+      그래서 식당을 찾아다니다가 들어간 곳!<br><br>
+      <img src="여행 (3).jpg" class="card-img-top responsive" alt="1일차 스시">
+      <br>완전 로컬식당인 것 같았다.. 일본인 아저씨들 뿐       
     </p>
+    <h5><b>!대박!</b></h5>
+    <p>다 먹고 난바로 이동했다<br></p>
+    <p><a href="#" class="btn custom-btn my-2">처음 화면으로</a></p>
   </div>
   
   <!-- 두 번째 콘텐츠 -->
   <div id="content-2" class="container py-5 text-center">
     <h2 style="background-color: #cadef7;"><b>2일차 - 교토</b></h2>
-    <p>두 번째 "View" 버튼 클릭 시 이동할 콘텐츠입니다.</p>
+    <p>
+      교토에 가기 전 첫날 밤에 산 에그타르트를 아침으로 먹었다<br>
+      내가 살면서 먹은 에그타르트 중에 제일 맛있었다 ~~!!<br><br>
+      <img src="여행 (13).jpg" class="card-img-top responsive" alt="2일차 에그타르트트">
+      <br>교토 숙소 체크인 후 아라시야마 대나무숲에 갔는데 맨 초입에 당고가 있었다<br>
+      당고 맛은 한번 봐야겠어서 사먹어봤는데 생각과 달리 달지 않고 간장맛이 났당..<br><br>
+      <img src="여행 (15).jpg" class="card-img-top responsive" alt="2일차 당고">      
+    </p>
+    <h5 style="color: rgb(229, 38, 38); background-color: rgb(255, 255, 168);"><b>이고 실화냐!! <br>그래두 맛있었당</b></h5>
+    <br><p>이날 하필 비가와서 아쉬웠지만 운치있어보여서 나름 괜찮았다</p>
+    <img src="여행 (17).jpg" class="card-img-top responsive" alt="2일차 아라시아마"><br><br>
+    <p><a href="#" class="btn custom-btn my-2">처음 화면으로</a></p>
   </div>
   
   <!-- 세 번째 콘텐츠 -->
   <div id="content-3" class="container py-5 text-center">
     <h2 style="background-color: #cadef7;"><b>3일차 - 덴노지</b></h2>
-    <p>세 번째 "View" 버튼 클릭 시 이동할 콘텐츠입니다.</p>
+    <p>
+      혼자 일어나 숙소 온천에 갔다<br>
+      <b>아쉬워(┬┬﹏┬┬)</b><br><br>
+      <img src="여행 (28).jpg" class="card-img-top responsive" alt="3일차 온천천">
+      <br>쓰텐카쿠 쪽에 덴노지 동물원이 있어 겸사겸사 들렸다.<br>
+      이날은 날씨가 너무너무 좋았다<br>
+      <br>
+      <img src="여행 (32).jpg" class="card-img-top responsive" alt="3일차 쓰텐카쿠">
+      <br>
+      <h5 style="color: rgb(167, 202, 248);"><b>하늘 예쁜것좀 보세요 ㅠㅠㅠ</b></h5>
+      그냥 기본카메라로 찍었을 뿐인데..♡♡♡♡<br><br>
+      다음은 하루카스 300 전망대를 올라갔다.<br>
+      한국 전망대랑 뭐가다르겠어.. 하면서 올라갔지만<br>
+      한국은 산이 많아서 이렇게 일본본처럼 쫙 펼쳐진 광경을 볼 수 없었다..<br><br>
+      <img src="여행 (34).jpg" class="card-img-top responsive" alt="3일차 하루카스300"><br><br>
+      숙소로 돌아와서 축구보면서 함께 먹을 음식들을 샀다!!<br><br><br>
+      <h5>카타르 아시안컵</h5>
+      <h3 style="background-color: gray; padding: 10px;">
+        <b><span style="color: white;">요르단</span>
+        vs
+        <span style="color: red;">대한민국</span></b>
+      </h3>
+      
+      <img src="여행 (39).jpg" class="card-img-top responsive" alt="3일차 축구">
+      <br><br>
+      오뎅 맛나용 ♪♪~
+    </p>
+
+    <p><a href="#" class="btn custom-btn my-2">처음 화면으로</a></p>
   </div>
   
   <!-- 네 번째 콘텐츠 -->
   <div id="content-4" class="container py-5 text-center">
     <h2 style="background-color: #cadef7;"><b>4일차 - 출국 및 총정리</b></h2>
-    <p>네 번째 "View" 버튼 클릭 시 이동할 콘텐츠입니다.</p>
+    <p>
+    힘들었는지 다들 어제 불도 안끄고 화장도 안지우고 그냥 잠들었다ㅠㅠ<br>
+    아침에 일어나보니 다들 상태가 ㅠㅠ 웃김<br>
+    <br>공항에 가기 전 마지막으로 우메다에 들리기로 했다<br><br>
+    <img src="여행 (35).jpg" class="card-img-top responsive" alt="4일차 여성전용칸"><br>
+    <br>가는 길에 여성전용칸도 발견하고 (신기하당!!)<br>
+    첫 날 먹으려다 못 먹었던 <b>이치란 라멘</b>도 오픈런에 성공했다!<br><br>
+    <img src="여행 (36).jpg" class="card-img-top responsive" alt="4일차 이치란라멘"><br>
+    <br>나는 엄청 맛있었는데 친구들은 별로라고 했다..<br>
+    (다들 마늘을 안넣어서 그래.... 난 마늘 한쪽을 다 넣었다구 ㅜㅠㅜㅜ)<br>
+    역시 한국인은 마늘없음 못산다..<br><br>
+    <img src="여행 (37).jpg" class="card-img-top responsive" alt="4일차 우메다"><br>
+    <br>이날도 날씨가 엄청 좋았다..<br>
+    나 가야하는데.. 가는날에 날씨가 좋냐 ㅠㅠ<br>
+    암튼 여긴 사방이 백화점, 쇼핑몰이라 구경하러 다녔다<br>
+    그러다가 갑자기 <b><닌텐도 스위치></b>도 구매하고..<br>
+    <br>시간 다 되어서 공항으로..........<br>
+    가려했지만.....<br>
+    <br>
+    <h4 style="color: rgb(229, 38, 38);"><b>비상!..비상!..</b></h4><br>
+    공항가는 열차 타려고하는데 교통카드가 안됩니당..<br>
+    현금도 없어서 atm 찾아다니다가 발견했는데..<br>
+    10만원 이상부터 뽑을 수 있대요..<br><br>
+    <b>으앙 ㅠㅠ 망했다..</b><br>
+    그런데 한국말 잘하시는 외국인분이 저흴 도와주셨어요..<br>
+    신이시여..<br>
+    <br>
+    무사히 집에 도착할 수 있었답니당~~<br>
+    <br>
+    마지막으로 제가 사온 간식들을 보세요..ㅎㅎ<br><br>
+    <img src="여행 (40).jpg" class="card-img-top responsive" alt="4일차 간식"><br>
+
+    </p>
   </div>
 
   
@@ -349,7 +435,9 @@
   </div>
 </footer>
 
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js">
+  
+</script>
   
     </body>
 </html>
